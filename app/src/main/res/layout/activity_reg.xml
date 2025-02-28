@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E2F0B568"
+    tools:context=".RegActivity"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="520dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#E9F9DEBB"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="258dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="Создать..."
+            android:textColor="#011"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/reg_login"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:inputType="text"
+            android:hint="Логин"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:textColor="@color/black"
+
+            android:fontFamily="sans-serif"
+            android:inputType="textEmailAddress"
+            android:hint="Почта"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:textColor="@color/black"
+
+            android:fontFamily="sans-serif"
+            android:inputType="textPassword"
+            android:hint="Пароль"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/reg_button_request"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#4F8851"
+            android:text="Создать"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/to_auth_page_text"
+            android:layout_width="258dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Уже есть аккаунт..."
+            android:textColor="#011"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+</LinearLayout>

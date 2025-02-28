@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity"
+    android:background="#E2F0B568">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:background="#E23791EC">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:textStyle="bold"
+
+                android:gravity="center_vertical"
+                android:textSize="32sp"
+                android:text="MyGallery" />
+
+
+
+            <ImageButton
+                android:id="@+id/person_button_back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_revert"
+                android:background="?attr/selectableItemBackground"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="#E9FFDCAB"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/item_list_title_page"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"/>
+
+            <ImageView
+                android:id="@+id/item_list_image_page"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/lamp" />
+
+            <TextView
+                android:id="@+id/item_list_text_page"
+                android:layout_width="match_parent"
+                android:paddingVertical="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/item_list_button_page_favourites"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#82FCD95B"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Добавить в избранное"
+                />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorHeight="20dp"
+                app:tabIndicatorColor="#0E90FF"
+                android:background="#E9FFDCAB"
+                app:tabMode="fixed" />
+
+            <TextView
+                android:id="@+id/item_list_text_comment_title"
+                android:layout_width="match_parent"
+                android:paddingVertical="15dp"
+                android:textSize="42sp"
+                style="bold"
+                android:layout_height="wrap_content"
+                android:text="Комментарии"
+                android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/item_list_text_comment_review"
+                android:layout_width="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:textSize="24sp"
+                style="bold"
+                android:layout_height="wrap_content"
+                android:text="Оставьте отзыв"
+                android:gravity="center"/>
+            <RatingBar
+                android:id="@+id/comments_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1"
+                android:theme="@style/MyRatingBar"
+                android:layout_gravity="center" />
+
+
+            <EditText
+                android:id="@+id/comments_review_input"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Введите ваш отзыв"
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/comments_send_review_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отправить отзыв"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

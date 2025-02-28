@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Catalog</string>
+    <string name="navigation_drawer_open">Открыть навигацию</string>
+    <string name="navigation_drawer_close">Закрыть навигацию</string>
+</resources>
