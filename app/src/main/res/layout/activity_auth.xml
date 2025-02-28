@@ -39,7 +39,7 @@
         android:textColor="@color/black"
         android:fontFamily="sans-serif"
         android:inputType="text"
-        android:hint="Логин"
+        android:hint="Email"
         android:textSize="30sp"
         android:layout_marginTop="50dp"/>
 
